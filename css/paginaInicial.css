@@ -283,7 +283,7 @@ body{
     margin-top: 30px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.418);
-    background-image: url(/images/imagemSala1.jpeg);
+    background-image: url(./images/imagemSala1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
