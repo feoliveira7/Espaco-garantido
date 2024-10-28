@@ -34,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     user-select: none;
-    width: 80vw;
+    width: 70vw;
     height: 70px;
 }
 
@@ -62,7 +62,7 @@ body{
     display: flex;
     justify-content: right;
     align-items: center;
-    width: 270px;
+    width: 30vw;
     height: 70px;
     cursor: pointer;
 }
