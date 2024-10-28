@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Garantido</title>
+    <link rel="stylesheet" href="css/maps.css">
+    <link rel="icon" href="images/logoEspaco.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="mobile" class="mobile">
+        <header class="header-mobile" id="header-mobile">
+
+            <div id="headerLine1" class="headerLine1">
+                <div class="divLogo-mobile">
+    
+                    <p onclick="location.href='helloWorld.html'" class="logoLine1">ESPAÇO</p>
+                    <p class="logoLine2">GARANTIDO</p>
+        
+                </div>
+        
+                <div id="divConta-mobile" class="divConta-mobile" onclick="menu()">
+        
+                    <p class="nomeUsuario-Header" id="nomeUsuario-Header">{nomeUsuario}</p> <img class="fotoUsuario-Header" id="fotoUsuario-Header" src="images/profile-user.png" alt="">
+        
+                </div>
+            </div>
+    
+    
+            <div id="containerMenu" class="exitConta-Mobile">
+                <div id="fundoBotoes" class="fundoBotoes">
+                    <div id="fundoPerfil" class="fundoPerfil">
+                        <button id="perfil-Button" class="perfil-Button" onclick="settings()">Meu Perfil</button>
+                    </div>
+                    <div id="fundoConfiguracoes" class="fundoConfiguracoes">
+                        <button id="configuracoes-Button" class="configuracoes-Button" onclick="settings()">Configurações</button>
+                    </div>
+                    <div id="fundoTema" class="fundoTema" >
+                        <button id="tema-Button" class="tema-Button" onclick="alternarTemaaMobile()">Tema: Claro</button>
+                    </div>
+                    <div id="fundoSairConta" class="fundoSairConta" onclick="sairConta()">
+                        <button id="exitConta-Button" class="exitConta-Button">Sair <img id="exitConta-Image" class="exitConta-Image" src="images/exitBlack.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+    
+        </header>
+    
+        <div class="navBar-Mobile">
+            <div class="fundoNavBar-Mobile" id="fundoNavBar-Mobile">
+    
+                <div class="button1navBar-Mobile" id="button1navBar-Mobile" onclick="location.href='paginaInicial.html'" >
+                    <img class="imgButton1navBar" id="imgButton1navBar" src="images/homeBlack.png" alt="">
+                </div>
+    
+                <div class="button2navBar-Mobile" id="button2navBar-Mobile">
+                    <img class="imgButton2navBar" id="imgButton2navBar" src="images/mapWhite.png" alt="">
+                </div>
+    
+                <div class="button3navBar-Mobile" id="button3navBar-Mobile">
+                    <img class="imgButton3navBar" id="imgButton3navBar" src="images/menuBlack.png" alt="">
+                </div>
+    
+    
+            </div>
+        </div>
+    
+        <main>
+
+            <div class="blocosCategorias" id="blocosCategorias">
+
+                <div class="categorias" id="categorias">
+                    <div class="titleCategoria" id="titleCategoria">Escolha a categoria:</div>
+                    <button class="categoria1-button" id="categoria1-button" onclick="abrirSalas()">Salas</button>
+                    <button class="categoria2-button" id="categoria2-button">Equipamentos</button>
+                </div>
+
+            </div>
+    
+            <div class="blocosMapas">
+
+                <div class="bloco1" id="bloco1-mapa">
+                    <p class="titleBloco1" id="titleBloco1">Mapa da Escola:</p>
+
+                    <button class="andar1-button" id="andar1-button" onclick="piso1()">1º Piso</button>
+                    <button class="andar2-button" id="andar2-button" onclick="piso2()">2º Piso</button>
+                </div>
+
+                <div class="bloco2" id="bloco2">
+                    <p class="titleBloco2" id="titleBloco2">Salas:</p>
+
+                    <div class="line1Bloco2">
+                        <button class="salasButton" id="salasButton">Sala 1</button>
+                        <button class="salasButton" id="salasButton2">Sala 2</button>
+                        <button class="salasButton" id="salasButton3">Sala 3</button>
+                    </div>
+                    <div class="line1Bloco2">
+                        <button class="salasButton2" id="salasButton4">Sala 4</button>
+                        <button class="salasButton2" id="salasButton5">Sala 5</button>
+                        <button class="salasButton2" id="salasButton6">Sala 6</button>
+                    </div>
+                    <div class="line1Bloco2">
+                        <button class="salasButton2" id="salasButton7">Sala 7</button>
+                        <button class="salasButton2" id="salasButton8">Sala 8</button>
+                        <button class="salasButton2" id="salasButton9">Sala 9</button>
+                    </div>
+                </div>
+
+                <div class="bloco3" id="bloco3">
+                    <p class="titleBloco3" id="titleBloco3">Salas:</p>
+
+                    <div class="line1Bloco2">
+                        <button class="salasButton" id="salasButton10">Sala 10</button>
+                        <button class="salasButton" id="salasButton11">Sala 11</button>
+                        <button class="salasButton" id="salasButton12">Sala 12</button>
+                    </div>
+                    <div class="line1Bloco2">
+                        <button class="salasButton2" id="salasButton13">Sala 13</button>
+                        <button class="salasButton2" id="salasButton14">Sala 14</button>
+                        <button class="salasButton2" id="salasButton15">Sala 15</button>
+                    </div>
+                    <div class="line1Bloco2">
+                        <button class="salasButton2" id="salasButton16">Sala 16</button>
+                        <button class="salasButton2" id="salasButton17">Sala 17</button>
+                        <button class="salasButton2" id="salasButton18">Sala 18</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+        </main>
+    </div>
+
+    <div id="erroPage" class="erroPage">
+
+        <div class="header-Erro">
+            <div class="erro-Button" onclick="backHome()">
+                <img class="img-Erro" src="images/right-arrow.png" alt=""> <p class="subTitle-Erro">Voltar</p>
+            </div>
+
+            <div class="erro-Button-pc" onclick="backHome2()">
+                <img class="img-Erro" src="images/right-arrow.png" alt=""> <p class="subTitle-Erro">Voltar</p>
+            </div>
+            
+
+        </div>
+
+        <div class="centerInfos">
+            <h1 class="titleError">Desculpe, ainda estamos trabalhando nisso!</h1>
+
+            <img class="img-progress" src="images/workingIcon1.png" alt="">
+        </div>
+        
+
+    </div>
+    
+<div class="computer" id="computer">
+
+    <header class="header-pc">
+        <div class="headerPcline1">
+            <div class="divLogo-pc">
+                <img class="logoNavIcon-pc" src="images/menuWhite.png" alt=""> <P id="logoPcLine1" class="logoPcLine1">ESPAÇO GARANTIDO</P>
+            </div>
+    
+            <div class="divConta-pc" onclick="menu2()"> 
+                <p class="nomeUsuario2-Header" id="nomeUsuario2-Header">{nomeUsuario}</p> <img class="fotoUsuario2-Header" id="fotoUsuario2-Header" src="images/profile-user.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div id="containerMenu-pc" class="containerMenu-pc">
+            <div class="fundoBotoes-pc">
+                <div class="fundoPerfil-pc">
+                    <button class="perfil-Button-pc" onclick="settings2()">Meu Perfil</button>
+                </div>
+                <div class="fundoConfiguracoes-pc">
+                    <button class="configuracoes-Button-pc" onclick="settings2()">Configurações</button>
+                </div>
+                <div class="fundoTema-pc" >
+                    <button class="tema-Button-pc">Tema: Claro</button>
+                </div>
+                <div class="fundoSairConta-pc" onclick="sairConta()">
+                    <button class="exitConta-Button-pc">Sair <img class="exitConta-Image-pc" src="images/exitBlack.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-pc">
+
+        <div class="navbar-pc">
+            <div class="buttonsNavBar">
+                <button class="navbarButton1" onclick="location.href='paginaInicial.html'"><img class="navbarButtonImg1" src="images/homeWhite.png" alt="">Home</button>
+                <button class="navbarButton2"><img class="navbarButtonImg1" src="images/mapWhite.png" alt="">Mapa</button>
+                <button class="navbarButton3"><img class="navbarButtonImg1" src="images/menuWhite.png" alt="">Navegar</button>
+                
+            </div>
+        </div>
+
+        <div class="centerInfos2">
+            <h1 class="titleError2">Desculpe, ainda estamos trabalhando nisso!</h1>
+
+            <img class="img-progress2" src="images/workingIcon1.png" alt="">
+        </div>
+        
+
+    </main>
+
+
+
+</div>
+
+
+
+    <script src="javascript/maps.js"></script>
+    <script src="pageTheme2.js"></script>
+</body>
+</html>
